@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread('entrada.jpg')
+image = cv2.imread('images/entrada.jpg')
 #Cria um retangulo azul por toda a largura da imagem
 image[30:50, :] = (255, 0, 0)
 
@@ -23,5 +23,5 @@ image[250:350, 300:400] = (255, 255,255)
 image[70:100, 300: 450] = (0, 0, 0)
 
 cv2.imshow("Imagem alterada",image)
-cv2.imwrite("alterada.jpg",image)
+cv2.imwrite("images/saida_ex00.jpg",image)
 cv2.waitKey(0)
